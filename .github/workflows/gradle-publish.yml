@@ -15,9 +15,9 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: Access APOD_API_KEY
+      - name: Access SECRET_NAME
         env:
-          APOD_API_KEY: ${{ secrets.ACCESS_TOKEN }}
-        run: echo ACCESS_TOKEN=\"$ACCESS_TOKEN\" > ./local.properties
+          APOD_API_KEY: ${{ secrets.SECRET_NAME }}
+        run: echo SECRET_NAME=\"$SECRET_NAME\" > ./local.properties
       - name: Build the app
         run: ./gradlew assembleDebug
