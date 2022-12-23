@@ -18,6 +18,6 @@ jobs:
       - name: Access SECRET_NAME
         env:
           APOD_API_KEY: ${{ secrets.SECRET_NAME }}
-        run: echo SECRET_NAME=\"$SECRET_NAME\" > ./local.properties
+        run: echo SECRET_NAME=\"$SECRET_NAME\" > ./gradle.properties
       - name: Build the app
         run: ./gradlew assembleDebug
