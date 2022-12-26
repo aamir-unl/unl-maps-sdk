@@ -10,7 +10,7 @@ object Constants {
     /**
      * [BASE_URL] is the base url for [UnlMap] Style
      */
-    private const val BASE_URL = "https://alpha.platform.unl.global/"
+    private const val BASE_URL = "https://platform.unl.global/"
     const val TERRAIN = "${BASE_URL}map_styles_terrain.json"
     const val BASE = "${BASE_URL}map_styles_base.json"
     const val TRAFFIC = "${BASE_URL}map_styles_traffic.json"
